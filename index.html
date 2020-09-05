@@ -165,12 +165,12 @@ document.getElementsByClassName("total")[0].innerHTML =`Ваш процент н
 <body>
 <form id="calcEasyCredit">
 	<div class="otherParam">
-		<span class="textInput"><p>План эталона</p><input  id="sumEtalon" type="number" placeholder ="План эталона" required></span><br>
-		<span class="textInput"><p>План эталона АСС</p><input  id="sumEtalonAcc" type="number" placeholder ="План эталона АСС" required></span><br>
-		<span class="textInput"><p>Процент на данный момент</p><input  id="actualPercentEtalon" type="number" step="any" placeholder ="Процент на данный момент" required></span><br>
-		<span class="textInput"><p>Процент на данный момент Асс</p><input  id="actualPercentEtalonAcc" type="number" step="any" placeholder ="Процент на данный момент Асс" required></span><br>
-		<span class="textInput"><p>Количество чеков</p><input  id="checkQuantity" type="number" step="any" placeholder ="Количество чеков" required></span><br>
-		<span class="textInput"><p>Количество позиций</p><input  id="checkLength" type="number" step="any" placeholder ="Количество позиций" required></span><br>
+		<span class="textInput"><p>План эталона</p><input  id="sumEtalon" type="number"  required></span><br>
+		<span class="textInput"><p>План эталона АСС</p><input  id="sumEtalonAcc" type="number" required></span><br>
+		<span class="textInput"><p>Процент на данный момент</p><input  id="actualPercentEtalon" type="number" step="any" required></span><br>
+		<span class="textInput"><p>Процент на данный момент Асс</p><input  id="actualPercentEtalonAcc" type="number" step="any"  required></span><br>
+		<span class="textInput"><p>Количество чеков</p><input  id="checkQuantity" type="number" step="any"  required></span><br>
+		<span class="textInput"><p>Количество позиций</p><input  id="checkLength" type="number" step="any"  required></span><br>
 	</div>
 	<input  class="btn btn-confirm" onclick="calc();return false;" type="submit" value="OK"><br>
 	<div class="total"></div>

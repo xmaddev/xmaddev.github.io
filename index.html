@@ -152,7 +152,7 @@
   		percentCoef = (checkLength / checkQuantity) < 1.5 ? 1.07 : (checkQuantity / checkLength) < 1.75 ? 1.12 : (checkQuantity / checkLength) < 2 ? 1.17 : 1 ;
   		percentBonus = (actualPercentEtalon <= 80) ? 0.25 : (actualPercentEtalon <= 110) ? 0.30 : 0.35;
   		percentBonusAcc = (actualPercentEtalonAcc <= 80) ? 0.25 : (actualPercentEtalonAcc <= 110) ? 0.30 : 0.35;
-document.getElementsByClassName("total")[0].innerHTML =`Ваш процент на данный момент составляет ${actualPercentEtalon}<br>`+
+document.getElementsByClassName("total")[0].innerHTML =
 `1% от эталона без АСС составляет ${Math.ceil(sumEtalon / (1.6 * 1.6 * 100))} lei<br>`+
 `1% от эталона АСС составляет ${Math.ceil(sumEtalonAcc / (1.6 * 4 * 100))} lei<br>`+
 `Ваш коэффициент составляет ${(checkLength / checkQuantity).toFixed(3)}, для того чтобы достичь следующего коэффициента ${nextCoef} вам необходимо набрать еще ${ Math.ceil((checkQuantity * nextCoef) - checkLength)} единиц товара на 1 чек<br>`+

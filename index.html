@@ -149,7 +149,7 @@
   		checkQuantity = document.getElementById("checkQuantity").value;
   		checkLength = document.getElementById("checkLength").value;
   		nextCoef = (checkLength / checkQuantity) < 1.5 ? 1.5 : (checkQuantity / checkLength) < 1.75 ? 1.75 : (checkQuantity / checkLength) ;
-  		percentCoef = (checkLength / checkQuantity) < 1.5 ? 1.07 : (checkQuantity / checkLength) < 1.75 ? 1.12 : (checkQuantity / checkLength) < 2 ? 1.17 : 1.25 ;
+  		percentCoef = (checkLength / checkQuantity) < 1.5 ? 1.07 : (checkQuantity / checkLength) < 1.75 ? 1.12 : (checkQuantity / checkLength) < 2 ? 1.17 : 1 ;
   		percentBonus = (actualPercentEtalon <= 80) ? 0.25 : (actualPercentEtalon <= 110) ? 0.30 : 0.35;
   		percentBonusAcc = (actualPercentEtalonAcc <= 80) ? 0.25 : (actualPercentEtalonAcc <= 110) ? 0.30 : 0.35;
 document.getElementsByClassName("total")[0].innerHTML =`Ваш процент на данный момент составляет ${actualPercentEtalon}<br>`+

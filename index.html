@@ -156,7 +156,7 @@ document.getElementsByClassName("total")[0].innerHTML =`Ваш процент н
 `1% от эталона без АСС составляет ${Math.ceil(sumEtalon / (1.6 * 1.6 * 100))} lei<br>`+
 `1% от эталона АСС составляет ${Math.ceil(sumEtalonAcc / (1.6 * 4 * 100))} lei<br>`+
 `Ваш коэффициент составляет ${(checkLength / checkQuantity).toFixed(3)}, для того чтобы достичь следующего коэффициента ${nextCoef} вам необходимо набрать еще ${ Math.ceil((checkQuantity * nextCoef) - checkLength)} единиц товара на 1 чек<br>`+
-`Ваш заработок на данный момент (3 ранг,АВ) составляет ${(Math.ceil((actualPercentEtalon/100)*percentBonus*sumEtalon)/100+Math.ceil((actualPercentEtalonAcc/100)*percentBonus*sumEtalonAcc)/100)*percentCoef*0.88}`;
+`Ваш заработок на данный момент (3 ранг,АВ) составляет ${(Math.ceil((actualPercentEtalon/100)*percentBonus*sumEtalon)/100+Math.ceil((actualPercentEtalonAcc/100)*percentBonus*sumEtalonAcc)/100)*percentCoef*0.88 + 4000}`;
 		document.getElementsByClassName("total")[0].classList.toggle("scale");
 		$('.otherParam').slideUp();
 	}

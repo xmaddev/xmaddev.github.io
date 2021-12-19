@@ -8,8 +8,20 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-  <script
-  src="https://cdn.jsdelivr.net/gh/xmaddev/xmaddev.github.io/snow.js">
+<!-- From a local copy -->
+<script src="snowstorm-min.js"></script>
+
+<!-- Using a free CDN -->
+<script src="https://cdn.rawgit.com/scottschiller/Snowstorm/master/snowstorm-min.js">
+	// 1. Define a color for the snow
+snowStorm.snowColor = '#fff';
+// 2. To optimize, define the max number of flakes that can
+// be shown on screen at once
+snowStorm.flakesMaxActive = 96;
+// 3. Allow the snow to flicker in and out of the view
+snowStorm.useTwinkleEffect = true; 
+// 4. Start the snowstorm!
+snowStorm.start();
 </script>
   <style>
   body{background: url(https://source.unsplash.com/random) no-repeat center center;background-size: cover;}
